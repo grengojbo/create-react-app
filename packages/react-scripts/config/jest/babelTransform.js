@@ -8,8 +8,15 @@
 'use strict';
 
 const babelJest = require('babel-jest');
+const getCustomConfig = require('../custom-react-scripts/config');
+
+//Get custom configuration for injecting plugins, presets and loaders
+const customConfig = getCustomConfig(true);
 
 module.exports = babelJest.createTransformer({
-  presets: [require.resolve('babel-preset-react-app')],
+  presets: [require.resolve('babel-preset-react-app')].concat(
+    customConfig.babelPresets
+  ),
   babelrc: false,
+  plugins: customConfig.babelPlugins,
 });
