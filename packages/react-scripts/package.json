@@ -1,14 +1,14 @@
 {
-  "name": "custom-react-scripts",
-  "version": "0.2.0",
+  "name": "es6-react-scripts",
+  "version": "1.0.14-0",
   "description": "Configuration and scripts for create-react-app",
-  "repository": "kitze/custom-react-scripts",
-  "license": "BSD-3-Clause",
+  "repository": "grengojbo/es6-react-scripts",
+  "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/kitze/custom-react-scripts/issues"
+    "url": "https://github.com/grengojbo/es6-react-scripts/issues"
   },
   "files": [
     "bin",

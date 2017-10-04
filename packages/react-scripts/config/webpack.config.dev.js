@@ -8,6 +8,7 @@
 // @remove-on-eject-end
 'use strict';
 
+// const autoprefixer = require('autoprefixer');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -170,6 +171,7 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
+              // @remove-on-eject-begin
               babelrc: false,
               presets: [require.resolve('babel-preset-react-app')].concat(
                 customConfig.babelPresets
@@ -178,6 +180,7 @@ module.exports = {
               // This is a feature of `babel-loader` for webpack (not Babel itself).
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
+              // @remove-on-eject-end
               cacheDirectory: true,
             },
           },
