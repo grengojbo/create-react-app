@@ -31,10 +31,10 @@ The generated project comes with every option turned on by default, but you can 
 - ```REACT_APP_SASS=true``` - enable SASS support
 - ```REACT_APP_LESS=true``` - enable LESS support
 - ```REACT_APP_STYLUS=true``` - enable Stylus support
-- ```REACT_APP_CSS_MODULES``` - enable CSS modules
-- ```REACT_APP_SASS_MODULES``` - enable Sass modules
-- ```REACT_APP_LESS_MODULES``` - enable Less modules
-- ```REACT_APP_STYLUS_MODULES``` - enable Stylus modules
+- ```REACT_APP_CSS_MODULES=true``` - enable CSS modules
+- ```REACT_APP_SASS_MODULES=true``` - enable Sass modules
+- ```REACT_APP_LESS_MODULES=true``` - enable Less modules
+- ```REACT_APP_STYLUS_MODULES=true``` - enable Stylus modules
 
 Note: to use modules the file must be named in the following format: ```$name.module.$preprocessorName```.
 
