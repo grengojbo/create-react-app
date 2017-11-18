@@ -184,6 +184,7 @@ module.exports = function(
     );
   }
   console.log();
+  console.log(path.join(appPath, 'package.json'));
   console.log('es6-react-script happy hacking!');
 };
 
