@@ -94,15 +94,14 @@ class App extends Component {
             <li>
               <code>REACT_APP_WEBPACK_DASHBOARD=true</code>
               <span>
-                - Enables connection to {' '}
+                - Enables connection to{' '}
                 <a
-                  target="_blank"
                   ref="noopener noreferrer"
                   href="https://github.com/FormidableLabs/electron-webpack-dashboard"
                 >
                   webpack-dashboard
                 </a>{' '}
-                 (must be installed)
+                (must be installed)
               </span>
             </li>
           </ul>
@@ -110,7 +109,6 @@ class App extends Component {
           <br />
           <br />
           <a
-            target="_blank"
             rel="noopener noreferrer"
             className={lessStyles.readmeLink}
             href="https://github.com/kitze/create-react-app/tree/master/packages/react-scripts"

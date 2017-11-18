@@ -1,5 +1,5 @@
 # ☢ custom-react-scripts ☢
-Latest version of original react-scripts: **1.0.17**
+Latest version of original react-scripts: **1.0.11**
 
 ### ⚠️ Disclaimer:
 > This is **not** a fork of ```create-react-app```. It's just a fork of ```react-scripts``` with simple babel/webpack modifications that can toggle extra features.
@@ -18,8 +18,8 @@ The reason for this fork's existence is explained better in [this Medium article
 
 **the features are optional and can be turned on/off individually*
 
-### ❔How to use it
-```create-react-app my-app --scripts-version custom-react-scripts```
+### Установка
+```create-react-app my-app --scripts-version es6-react-scripts```
 
 Modify the ```.env``` file in the root of the generated project, and add any of the configuration options below 👇 to enable that feature.
 
@@ -31,10 +31,10 @@ The generated project comes with every option turned on by default, but you can 
 - ```REACT_APP_SASS=true``` - enable SASS support
 - ```REACT_APP_LESS=true``` - enable LESS support
 - ```REACT_APP_STYLUS=true``` - enable Stylus support
-- ```REACT_APP_CSS_MODULES``` - enable CSS modules
-- ```REACT_APP_SASS_MODULES``` - enable Sass modules
-- ```REACT_APP_LESS_MODULES``` - enable Less modules
-- ```REACT_APP_STYLUS_MODULES``` - enable Stylus modules
+- ```REACT_APP_CSS_MODULES=true``` - enable CSS modules
+- ```REACT_APP_SASS_MODULES=true``` - enable Sass modules
+- ```REACT_APP_LESS_MODULES=true``` - enable Less modules
+- ```REACT_APP_STYLUS_MODULES=true``` - enable Stylus modules
 
 Note: to use modules the file must be named in the following format: ```$name.module.$preprocessorName```.
 
@@ -45,7 +45,7 @@ For example ```styles.module.css``` or ```header.module.sass``` or ```footer.mod
 - ```REACT_APP_DECORATORS=true``` - enable decorators support
 
 #### Other
-- ```REACT_APP_WEBPACK_DASHBOARD=true``` - Enables connection to the[webpack-dashboard](https://github.com/FormidableLabs/electron-webpack-dashboard) Electron app (the app must be installed on local machine)
+- ```REACT_APP_WEBPACK_DASHBOARD=true``` - Enables connection to the [webpack-dashboard](https://github.com/FormidableLabs/electron-webpack-dashboard) Electron app (the app must be installed on local machine)
 
 ### 🤔 Why?
 The ```create-react-app``` app doesn't allow user configuration and modifications for few reasons:
