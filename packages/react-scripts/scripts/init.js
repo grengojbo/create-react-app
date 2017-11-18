@@ -181,7 +181,7 @@ module.exports = function(
     );
   }
   console.log();
-  console.log('Happy hacking!');
+  console.log('es6-react-script happy hacking!');
 };
 
 function isReactInstalled(appPackage) {
