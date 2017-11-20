@@ -16,6 +16,7 @@ process.on('unhandledRejection', err => {
 
 const fs = require('fs-extra');
 const path = require('path');
+const paths = require('../config/paths');
 const chalk = require('chalk');
 const spawn = require('react-dev-utils/crossSpawn');
 
@@ -38,7 +39,7 @@ module.exports = function(
   // Setup the script rules
   appPackage.scripts = {
     flow: 'flow',
-    analyze: 'source-map-explorer build/static/js/main.*',
+    analyze: `source-map-explorer ${paths.appBuild}/static/js/main.*`,
     server: 'node server',
     start: 'react-scripts start',
     build: 'react-scripts build',
@@ -102,7 +103,16 @@ module.exports = function(
     command = 'npm';
     args = ['install', '--save', verbose && '--verbose'].filter(e => e);
   }
-  args.push('react', 'react-dom');
+  args.push(
+    'react',
+    'react-dom',
+    'address',
+    'babel-register',
+    'express',
+    'flow-bin',
+    'morgan',
+    'prop-types'
+  );
 
   // Install additional template dependencies, if present
   const templateDependenciesPath = path.join(

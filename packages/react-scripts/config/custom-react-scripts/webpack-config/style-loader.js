@@ -2,6 +2,8 @@ const postCssOptions = require('../options/postcss-options');
 const extractTextPluginOptions = require('../options/extract-text-plugin-options');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
+const paths = require('../../paths');
+const lessOverrides = require(`${paths.appPath}/less-overrides.json`);
 
 module.exports = (loader, test, exclude, modules) => isDev => {
   let loaders = isDev
@@ -41,6 +43,7 @@ module.exports = (loader, test, exclude, modules) => isDev => {
       loader,
       options: {
         sourceMap: shouldUseSourceMap,
+        modifyVars: lessOverrides,
       },
     });
   }

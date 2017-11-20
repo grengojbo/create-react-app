@@ -71,9 +71,9 @@ module.exports = {
     // This does not produce a real file. It's just the virtual path that is
     // served by WebpackDevServer in development. This is the JS bundle
     // containing code from all our entry points, and the Webpack runtime.
-    filename: 'static/js/bundle.js',
+    filename: `${env.REACT_APP_STATIC}/js/bundle.js`,
     // There are also additional JS chunk files if you use code splitting.
-    chunkFilename: 'static/js/[name].chunk.js',
+    chunkFilename: `${env.REACT_APP_STATIC}/js/[name].chunk.js`,
     // This is the URL that app is served from. We use "/" in development.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
@@ -162,7 +162,9 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: `${env.REACT_APP_STATIC}/${
+                env.REACT_APP_MEDIA
+              }/[name].[hash:8].[ext]`,
             },
           },
           // Process JS with Babel.
@@ -198,7 +200,9 @@ module.exports = {
             exclude: [/\.js$/, /\.html$/, /\.json$/],
             loader: require.resolve('file-loader'),
             options: {
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: `${env.REACT_APP_STATIC}/${
+                env.REACT_APP_MEDIA
+              }/[name].[hash:8].[ext]`,
             },
           },
         ],

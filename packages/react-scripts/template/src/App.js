@@ -34,7 +34,8 @@ class App extends Component {
         <div className={stylusStyles.description}>
           <div className={sassStyles.command}>
             <code>
-              create-react-app my-app --scripts-version custom-react-scripts
+              create-react-app my-app --scripts-version es6-react-scripts npm
+              link react-dev-utils
             </code>
           </div>
 
@@ -81,6 +82,23 @@ class App extends Component {
             <li>
               <code>REACT_APP_BABEL_STAGE_0=true</code>
               <span>- Enable stage-0 preset</span>
+            </li>
+            <li>
+              <code>REACT_APP_DECORATORS=true</code>
+              <span>- Enable usage of decorators</span>
+            </li>
+            <li>
+              <code>REACT_APP_STATIC='static'</code>
+              <span>- Default static folder</span>
+            </li>
+            <li>
+              <code>REACT_APP_ANTD=false</code>
+              <span>
+                - Enable{' '}
+                <a href="https://ant.design/docs/react/customize-theme">
+                  ant.design customize-theme
+                </a>
+              </span>
             </li>
             <li>
               <code>REACT_APP_DECORATORS=true</code>
