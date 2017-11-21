@@ -35,14 +35,23 @@ class App extends Component {
           <div className={sassStyles.command}>
             <code>
               create-react-app my-app --scripts-version es6-react-scripts npm
-              link react-dev-utils
             </code>
+            <code>
+              yarn add address flow-bin prop-types express morgan antd
+            </code>
+            <code>link react-dev-utils</code>
           </div>
 
           <p>
             If you want to enable/disable certain features just modify the
             <b> .env</b> file in the root directory of the project.
           </p>
+          <code>import {Button} from 'antd';</code>
+          <code>
+            <div>
+              <Button type="primary">Button</Button>
+            </div>
+          </code>
 
           <b> Styling </b>
           <ul className="configs style-configs">

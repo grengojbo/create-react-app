@@ -46,7 +46,9 @@ if (env.stringified['process.env'].NODE_ENV !== '"production"') {
 }
 
 // Note: defined here because it will be used more than once.
-const cssFilename = `${env.REACT_APP_STATIC}/css/[name].[contenthash:8].css`;
+const cssFilename = `${
+  process.env.REACT_APP_STATIC
+}/css/[name].[contenthash:8].css`;
 
 // ExtractTextPlugin expects the build output to be flat.
 // (See https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/27)
@@ -74,8 +76,10 @@ module.exports = {
     // Generated JS file names (with nested folders).
     // There will be one main bundle, and one file per asynchronous chunk.
     // We don't currently advertise code splitting but Webpack supports it.
-    filename: `${env.REACT_APP_STATIC}/js/[name].[chunkhash:8].js`,
-    chunkFilename: `${env.REACT_APP_STATIC}/js/[name].[chunkhash:8].chunk.js`,
+    filename: `${process.env.REACT_APP_STATIC}/js/[name].[chunkhash:8].js`,
+    chunkFilename: `${
+      process.env.REACT_APP_STATIC
+    }/js/[name].[chunkhash:8].chunk.js`,
     // We inferred the "public path" (such as / or /my-project) from homepage.
     publicPath: publicPath,
     // Point sourcemap entries to original disk location (format as URL on Windows)
@@ -167,7 +171,9 @@ module.exports = {
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
-              name: 'static/media/[name].[hash:8].[ext]',
+              name: `${process.env.REACT_APP_STATIC}/${
+                process.env.REACT_APP_MEDIA
+              }/[name].[hash:8].[ext]`,
             },
           },
           // Process JS with Babel.
@@ -199,8 +205,8 @@ module.exports = {
             // by webpacks internal loaders.
             exclude: [/\.js$/, /\.html$/, /\.json$/],
             options: {
-              name: `${env.REACT_APP_STATIC}/${
-                env.REACT_APP_MEDIA
+              name: `${process.env.REACT_APP_STATIC}/${
+                process.env.REACT_APP_MEDIA
               }/[name].[hash:8].[ext]`,
             },
           },
@@ -293,7 +299,9 @@ module.exports = {
       },
       minify: true,
       // For unknown URLs, fallback to the index page
-      navigateFallback: `${publicUrl}/${env.REACT_APP_BUILD_DIST_INDEX}`,
+      navigateFallback: `${publicUrl}/${
+        process.env.REACT_APP_BUILD_DIST_INDEX
+      }`,
       // Ignores URLs starting from /__ (useful for Firebase):
       // https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
       navigateFallbackWhitelist: [/^(?!\/__).*/],
