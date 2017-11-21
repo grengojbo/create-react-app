@@ -46,12 +46,6 @@ class App extends Component {
             If you want to enable/disable certain features just modify the
             <b> .env</b> file in the root directory of the project.
           </p>
-          <code>import {Button} from 'antd';</code>
-          <code>
-            <div>
-              <Button type="primary">Button</Button>
-            </div>
-          </code>
 
           <b> Styling </b>
           <ul className="configs style-configs">
