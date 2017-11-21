@@ -103,16 +103,7 @@ module.exports = function(
     command = 'npm';
     args = ['install', '--save', verbose && '--verbose'].filter(e => e);
   }
-  args.push(
-    'react',
-    'react-dom',
-    'address',
-    'babel-register',
-    'express',
-    'flow-bin',
-    'morgan',
-    'prop-types'
-  );
+  args.push('react', 'react-dom');
 
   // Install additional template dependencies, if present
   const templateDependenciesPath = path.join(
@@ -195,7 +186,11 @@ module.exports = function(
   }
   console.log();
   console.log(path.join(appPath, 'package.json'));
-  console.log('es6-react-script happy hacking!');
+  console.log(
+    `es6-react-script (templateDependenciesPath: ${
+      templateDependenciesPath
+    }) happy hacking!`
+  );
 };
 
 function isReactInstalled(appPackage) {
