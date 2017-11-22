@@ -39,6 +39,7 @@ module.exports = function(
   // Setup the script rules
   appPackage.scripts = {
     flow: 'flow',
+    precommit: 'lint-staged',
     analyze: `source-map-explorer ./build/static/js/main.*`,
     server: 'node server',
     start: 'react-scripts start',

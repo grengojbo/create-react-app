@@ -226,7 +226,8 @@ module.exports = {
     // Generates an `index.html` file with the <script> injected.
     new HtmlWebpackPlugin({
       inject: true,
-      template: paths.appHtml,
+      template: process.env.REACT_APP_BUILD_SRC_INDEX,
+      // template: paths.appHtml,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
