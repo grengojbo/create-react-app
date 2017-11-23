@@ -1,6 +1,6 @@
 {
-  "name": "react-error-overlay-custom",
-  "version": "3.0.0-1",
+  "name": "react-error-overlay",
+  "version": "3.0.0-2",
   "description": "An overlay for displaying stack frames.",
   "main": "lib/index.js",
   "scripts": {
