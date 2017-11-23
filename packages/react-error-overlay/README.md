@@ -1,6 +1,6 @@
-# `react-error-overlay`
+# `react-error-overlay-custom`
 
-`react-error-overlay` is an overlay which displays when there is a runtime error.
+`react-error-overlay-custom` is an overlay which displays when there is a runtime error.
 
 ## Development
 
