@@ -13,10 +13,10 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
-const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
-const eslintFormatter = require('react-dev-utils/eslintFormatter');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+const InterpolateHtmlPlugin = require('react-dev-utils-custom/InterpolateHtmlPlugin');
+const WatchMissingNodeModulesPlugin = require('react-dev-utils-custom/WatchMissingNodeModulesPlugin');
+const eslintFormatter = require('react-dev-utils-custom/eslintFormatter');
+const ModuleScopePlugin = require('react-dev-utils-custom/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
 const getCustomConfig = require('./custom-react-scripts/config');
@@ -56,7 +56,7 @@ module.exports = {
     // the line below with these two lines if you prefer the stock client:
     // require.resolve('webpack-dev-server/client') + '?/',
     // require.resolve('webpack/hot/dev-server'),
-    require.resolve('react-dev-utils/webpackHotDevClient'),
+    require.resolve('react-dev-utils-custom/webpackHotDevClient'),
     // Finally, this is your app's code:
     paths.appIndexJs,
     // We include the app code last so that if there is a runtime error during

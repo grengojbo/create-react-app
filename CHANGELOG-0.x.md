@@ -67,7 +67,7 @@ npm install --save-dev --save-exact react-scripts@0.9.5
 
   * [#1721](https://github.com/facebookincubator/create-react-app/pull/1721) Fix hot reloading for WebpackDevServer after eject. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#1690](https://github.com/facebookincubator/create-react-app/pull/1690) Fix `openBrowser()` when `BROWSER=open` on macOS. ([@bpierre](https://github.com/bpierre))
 
@@ -82,9 +82,9 @@ npm install --save-dev --save-exact react-scripts@0.9.5
 
   * [#1542](https://github.com/facebookincubator/create-react-app/pull/1542) Bump `jsx-a11y` version. ([@bondz](https://github.com/bondz))
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
-  * [#1726](https://github.com/facebookincubator/create-react-app/pull/1726) Extract generic build functions into `react-dev-utils`. ([@viankakrisna](https://github.com/viankakrisna))
+  * [#1726](https://github.com/facebookincubator/create-react-app/pull/1726) Extract generic build functions into `react-dev-utils-custom`. ([@viankakrisna](https://github.com/viankakrisna))
 
 * Other
 
@@ -104,9 +104,9 @@ npm install --save-dev --save-exact react-scripts@0.9.5
   * [#1730](https://github.com/facebookincubator/create-react-app/pull/1730) Fix Node 4 e2e tests. ([@Timer](https://github.com/Timer))
 * `eslint-config-react-app`
   * [#1740](https://github.com/facebookincubator/create-react-app/pull/1740) Relax ESLint config peerDependency. ([@gaearon](https://github.com/gaearon))
-* `eslint-config-react-app`, `react-dev-utils`, `react-scripts`
+* `eslint-config-react-app`, `react-dev-utils-custom`, `react-scripts`
   * [#1729](https://github.com/facebookincubator/create-react-app/pull/1729) Lint internal scripts with `eslint:recommended`. ([@gaearon](https://github.com/gaearon))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#1724](https://github.com/facebookincubator/create-react-app/pull/1724) Don't use ES6 in a file that should run on Node 4. ([@gaearon](https://github.com/gaearon))
 * Other
   * [#1723](https://github.com/facebookincubator/create-react-app/pull/1723) Skip AppVeyor CI builds for Markdown changes. ([@gaearon](https://github.com/gaearon))
@@ -356,7 +356,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 
     This makes all environment variables previously available in JS, also available in the HTML file, for example `%REACT_APP_MY_VARIABLE%`. See [Referencing Environment Variables in HTML](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#referencing-environment-variables-in-the-html).
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#1148](https://github.com/facebookincubator/create-react-app/pull/1148) Configure which browser to open with `npm start`. ([@GAumala](https://github.com/GAumala))
 
@@ -372,7 +372,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 
     Jest has been updated to 18 and has introduced some [breaking changes and new features](https://facebook.github.io/jest/blog/2016/12/15/2016-in-jest.html).
 
-* `react-scripts`, `react-dev-utils`
+* `react-scripts`, `react-dev-utils-custom`
 
   * [#1264](https://github.com/facebookincubator/create-react-app/pull/1264) Remove interactive shell check when opening browser on start. ([@CaryLandholt](https://github.com/CaryLandholt))
 
@@ -391,7 +391,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
   * [#1309](https://github.com/facebookincubator/create-react-app/pull/1309) Bump `babel-loader` version (#1009). ([@frontsideair](https://github.com/frontsideair))
   * [#1267](https://github.com/facebookincubator/create-react-app/pull/1267) Only gitignore directories in root, not deep. ([@jayphelps](https://github.com/jayphelps))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#1377](https://github.com/facebookincubator/create-react-app/pull/1377) webpack-dev-server patch for 'still-ok' success status. ([@TheBlackBolt](https://github.com/TheBlackBolt))
   * [#1274](https://github.com/facebookincubator/create-react-app/pull/1274) Downgrading to compatible version of SockJS-Client. ([@holloway](https://github.com/holloway))
@@ -437,7 +437,7 @@ Thanks to [@Timer](https://github.com/timer) for cutting this release.
 * READMEs
 
   * [#1375](https://github.com/facebookincubator/create-react-app/pull/1375) Change console.log for errors and warnings. ([@jimmyhmiller](https://github.com/jimmyhmiller))
-  * [#1369](https://github.com/facebookincubator/create-react-app/pull/1369) Add missing import in react-dev-utils README.md. ([@pedronauck](https://github.com/pedronauck))
+  * [#1369](https://github.com/facebookincubator/create-react-app/pull/1369) Add missing import in react-dev-utils-custom README.md. ([@pedronauck](https://github.com/pedronauck))
 
 #### :house: Internal
 
@@ -538,7 +538,7 @@ npm install -g create-react-app@1.0.3
 
     We added [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) checks to the build output in 0.8.2 but it turns out that they may fail in browsers using special compression proxies, such as Chrome on Android, when served over HTTP. We disabled the checks until we can find a safe way to add them.
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#1226](https://github.com/facebookincubator/create-react-app/pull/1226) Fix weird lint output. ([@n3tr](https://github.com/n3tr))
 
@@ -585,16 +585,16 @@ npm install -g create-react-app@1.0.3
 
     Adds `create-react-app --help` with a list of options.
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#1211](https://github.com/facebookincubator/create-react-app/pull/1211) Use a better clear console sequence. ([@gaearon](https://github.com/gaearon))
 
     Ensures the development server clears the terminal when files are changed.
 
 #### :memo: Documentation
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
-  * [#1232](https://github.com/facebookincubator/create-react-app/pull/1232) [documentation] fix html-dev-plugin link in react-dev-utils doc. ([@shogunsea](https://github.com/shogunsea))
+  * [#1232](https://github.com/facebookincubator/create-react-app/pull/1232) [documentation] fix html-dev-plugin link in react-dev-utils-custom doc. ([@shogunsea](https://github.com/shogunsea))
 
 * `react-scripts`
 
@@ -698,7 +698,7 @@ npm install -g create-react-app@1.0.1
 
     Since 0.8.0, we are treating all imports with non-JS/CSS extensions the same way. Importing them gives you a string with their URL, and if their content is small enough (less than 10K), the URL is in fact an inlined [data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs). However, this doesn't work well with SVGs in case you use them for a sprite system since fragments don't work in data URIs, and it's wasteful to inline the same sprite SVG many times. To fix this, we have added an exception so that SVG files never get inlined.
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#1165](https://github.com/facebookincubator/create-react-app/pull/1165) Chrome 'open tab' reuse an empty tab when possible. ([@n3tr](https://github.com/n3tr))
 
     Fixes an issue that caused two tabs to get opened instead of just one. It also fixes some cases where the window with the existing tab would not get activated.
@@ -819,7 +819,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 
     Fixes a bug where `eject` failed when a `scripts` or `config` folder already existed in the project.
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#1035](https://github.com/facebookincubator/create-react-app/pull/1035) Fix Chrome tab reuse. ([@einarlove](https://github.com/einarlove))
 
     Fixes a bug with the app not opening in the existing tab in Chrome.
@@ -846,7 +846,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
     The test script now considers all files in the project when calculating test coverage.
 
   * [#968](https://github.com/facebookincubator/create-react-app/pull/968) Enable gzip compression in the development server (#966). ([@frontsideair](https://github.com/frontsideair))
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#816](https://github.com/facebookincubator/create-react-app/pull/816) add logging of existing default port process on start. ([@ianmcnally](https://github.com/ianmcnally))
 
     `react-scripts` can guess which process is running on the port 3000 when it's not available:
@@ -857,8 +857,8 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 
     Would you like to run the app on another port instead?
     ```
-* `react-dev-utils`
-  * [#963](https://github.com/facebookincubator/create-react-app/pull/963) Allow webpack 2 as a peerDependency in react-dev-utils. ([@einarlove](https://github.com/einarlove))
+* `react-dev-utils-custom`
+  * [#963](https://github.com/facebookincubator/create-react-app/pull/963) Allow webpack 2 as a peerDependency in react-dev-utils-custom. ([@einarlove](https://github.com/einarlove))
 
 #### :memo: Documentation
 * `react-scripts`
@@ -955,7 +955,7 @@ Thanks to [@fson](https://github.com/fson) for cutting this release.
 ](https://github.com/facebookincubator/create-react-app/pull/927))
 * Fixes a duplicate dependency on `babel-plugin-transform-regenerator`. ([@akofman](https://github.com/akofman) in [#864](https://github.com/facebookincubator/create-react-app/pull/864))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-custom`)
 
 * The error overlay is now disposed after fixing linting errors. ([@jarlef](https://github.com/jarlef) in [#856](https://github.com/facebookincubator/create-react-app/pull/856))
 * Adds support for Webpack 2 to `webpackHotDevClient`. ([@michalkvasnicak](https://github.com/michalkvasnicak) in [#840](https://github.com/facebookincubator/create-react-app/pull/840))
@@ -994,7 +994,7 @@ npm test -- -u
 
 * Babel and ESLint configuration is now placed into `package.json` after ejecting. ([@montogeek](https://github.com/montogeek) in [#773](https://github.com/facebookincubator/create-react-app/pull/773))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-custom`)
 
 * Fixes the syntax error overlay padding. ([@fson](https://github.com/fson) in [#758](https://github.com/facebookincubator/create-react-app/pull/758))
 
@@ -1012,7 +1012,7 @@ npm install --save-dev --save-exact react-scripts@0.6.1
 
 * Adds an overlay for syntax errors in development. ([@gaearon](https://github.com/gaearon) in [#744](https://github.com/facebookincubator/create-react-app/pull/744))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-custom`)
 
 * Adds an alternative WebpackDevServer client that displays the error overlay. ([@gaearon](https://github.com/gaearon) in [#744](https://github.com/facebookincubator/create-react-app/pull/744))
 
@@ -1030,9 +1030,9 @@ npm install --save-dev --save-exact react-scripts@0.6.0
 
 ### Build Dependency (`react-scripts`)
 
-* Updates `react-dev-utils` dependency
+* Updates `react-dev-utils-custom` dependency
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-custom`)
 
 * Fixes `%PUBLIC_URL%` replacement to work when specified multiple times. ([@fson](https://github.com/fson) in [#731](https://github.com/facebookincubator/create-react-app/pull/731))
 
@@ -1065,7 +1065,7 @@ npm install --save-dev --save-exact react-scripts@0.5.1
 
 * Published for the first time! ([@fson](https://github.com/fson) in [#701](https://github.com/facebookincubator/create-react-app/pull/701))
 
-### Utilities (`react-dev-utils`)
+### Utilities (`react-dev-utils-custom`)
 
 * Published for the first time! ([@gaearon](https://github.com/gaearon) in [#723](https://github.com/facebookincubator/create-react-app/pull/723))
 

@@ -65,7 +65,7 @@ function install_package {
     npm install --only=production
   fi
   # Remove our packages to ensure side-by-side versions are used (which we link)
-  rm -rf node_modules/{babel-preset-react-app,eslint-config-react-app,react-dev-utils,react-error-overlay,react-scripts}
+  rm -rf node_modules/{babel-preset-react-app,eslint-config-react-app,react-dev-utils-custom,react-error-overlay,react-scripts}
   cd ../..
 }
 
@@ -189,7 +189,7 @@ cd "$temp_app_path/test-kitchensink"
 # Link to our preset
 install_package "$root_path"/packages/babel-preset-react-app
 # Link to error overlay package because now it's a dependency
-# of react-dev-utils and not react-scripts
+# of react-dev-utils-custom and not react-scripts
 install_package "$root_path"/packages/react-error-overlay
 
 # Link to test module
@@ -252,7 +252,7 @@ fi
 install_package "$root_path"/packages/babel-preset-react-app
 install_package "$root_path"/packages/eslint-config-react-app
 install_package "$root_path"/packages/react-error-overlay
-install_package "$root_path"/packages/react-dev-utils
+install_package "$root_path"/packages/react-dev-utils-custom
 install_package "$root_path"/packages/react-scripts
 
 # Link to test module

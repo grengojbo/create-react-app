@@ -18,7 +18,7 @@ const fs = require('fs-extra');
 const path = require('path');
 // const paths = require('../config/paths');
 const chalk = require('chalk');
-const spawn = require('react-dev-utils/crossSpawn');
+const spawn = require('react-dev-utils-custom/crossSpawn');
 
 module.exports = function(
   appPath,

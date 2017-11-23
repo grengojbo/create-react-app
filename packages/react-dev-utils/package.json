@@ -1,6 +1,6 @@
 {
-  "name": "react-dev-utils",
-  "version": "4.2.1",
+  "name": "react-dev-utils-custom",
+  "version": "4.2.1-1",
   "description": "Webpack utilities used by Create React App",
   "repository": "grengojbo/es6-react-scripts",
   "license": "MIT",

@@ -51,7 +51,7 @@ packages/
   babel-preset-react-app/
   create-react-app/
   eslint-config-react-app/
-  react-dev-utils/
+  react-dev-utils-custom/
   react-scripts/
 ```
 ### Package Descriptions
@@ -64,7 +64,7 @@ The global CLI command code can be found in this directory, and shouldn't often 
 #### [eslint-config-react-app](https://github.com/facebookincubator/create-react-app/tree/master/packages/eslint-config-react-app)
 This package contains a conservative set of rules focused on making errors apparent and enforces no style rules.<br>
 This package is enabled by default for all `create-react-app` scaffolded applications.
-#### [react-dev-utils](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-dev-utils)
+#### [react-dev-utils-custom](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-dev-utils-custom)
 This package contains utilities used for `react-scripts` and sister packages.<br>
 Its main purpose is to conceal code which the user shouldn't be burdened with upon ejecting.
 #### [react-scripts](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts)

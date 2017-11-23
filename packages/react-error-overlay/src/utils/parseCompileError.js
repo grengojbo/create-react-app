@@ -15,7 +15,7 @@ const lineNumberRegexes = [
   /^.*\((\d+):(\d+)\)$/,
 
   // ESLint errors
-  // Based on eslintFormatter in react-dev-utils
+  // Based on eslintFormatter in react-dev-utils-custom
   /^Line (\d+):.+$/,
 ];
 

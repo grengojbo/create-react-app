@@ -41,7 +41,7 @@ yarn add --exact react-scripts@1.0.17
 
   * [#3374](https://github.com/facebookincubator/create-react-app/pull/3374) Set correct image type and sizes in `manifest.json`. ([@piotr-cz](https://github.com/piotr-cz))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#3368](https://github.com/facebookincubator/create-react-app/pull/3368) Fix a crash in development mode in older browsers. ([@felthy](https://github.com/felthy))
 
@@ -72,7 +72,7 @@ yarn add --exact react-scripts@1.0.16
 
   * [#3287](https://github.com/facebookincubator/create-react-app/pull/3287) Fix favicon sizes value in the project manifest. ([@ryansully](https://github.com/ryansully))
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#3230](https://github.com/facebookincubator/create-react-app/pull/3230) Fix watching for changes in `src/node_modules`. ([@xjlim](https://github.com/xjlim))
 
@@ -83,11 +83,11 @@ yarn add --exact react-scripts@1.0.16
   * [#3239](https://github.com/facebookincubator/create-react-app/pull/3239) Allow importing `.mjs` files. ([@Timer](https://github.com/Timer))
   * [#3340](https://github.com/facebookincubator/create-react-app/pull/3340) Polyfill `requestAnimationFrame` in test environment. ([@gaearon](https://github.com/gaearon))
 
-* `babel-preset-react-app`, `react-dev-utils`, `react-error-overlay`, `react-scripts`
+* `babel-preset-react-app`, `react-dev-utils-custom`, `react-error-overlay`, `react-scripts`
 
   * [#3342](https://github.com/facebookincubator/create-react-app/pull/3342) Bump dependencies. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`, `react-error-overlay`
+* `react-dev-utils-custom`, `react-error-overlay`
 
   * [#3100](https://github.com/facebookincubator/create-react-app/pull/3100) Add click-to-open support for build errors. ([@tharakawj](https://github.com/tharakawj))
 
@@ -184,7 +184,7 @@ yarn add --exact react-scripts@1.0.15
 
 #### :bug: Bug Fix
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#3098](https://github.com/facebookincubator/create-react-app/pull/3098) Always reload the page on next compile after a runtime error. ([@Timer](https://github.com/Timer))
 
@@ -194,7 +194,7 @@ yarn add --exact react-scripts@1.0.15
 
 #### :nail_care: Enhancement
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#3077](https://github.com/facebookincubator/create-react-app/pull/3077) Auto-detect running editor on Linux for error overlay. ([@gulderov](https://github.com/gulderov))
 
@@ -230,7 +230,7 @@ yarn add --exact react-scripts@1.0.15
 
   * [#3102](https://github.com/facebookincubator/create-react-app/pull/3102) Clean target directory before compiling overlay. ([@Timer](https://github.com/Timer))
 
-* `create-react-app`, `react-dev-utils`, `react-error-overlay`, `react-scripts`
+* `create-react-app`, `react-dev-utils-custom`, `react-error-overlay`, `react-scripts`
 
   * [#3058](https://github.com/facebookincubator/create-react-app/pull/3058) Re-run prettier for all files and pin the version. ([@viankakrisna](https://github.com/viankakrisna))
 
@@ -273,7 +273,7 @@ yarn add --exact react-scripts@1.0.14
 
   * [#3051](https://github.com/facebookincubator/create-react-app/pull/3051) Fix case-sensitivity issue with upgrading the package version. ([@tharakawj](https://github.com/tharakawj))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#3049](https://github.com/facebookincubator/create-react-app/pull/3049) Print filesize difference for chunks. ([@esturcke](https://github.com/esturcke))
 
@@ -289,7 +289,7 @@ yarn add --exact react-scripts@1.0.14
 
 #### :house: Internal
 
-* `react-dev-utils`, `react-error-overlay`
+* `react-dev-utils-custom`, `react-error-overlay`
 
   * [#3028](https://github.com/facebookincubator/create-react-app/pull/3028) Make error overlay filename configurable. ([@jaredpalmer](https://github.com/jaredpalmer))
 
@@ -321,7 +321,7 @@ yarn add --exact react-scripts@1.0.13
 * `react-error-overlay`
   * [#3012](https://github.com/facebookincubator/create-react-app/pull/3012) Fix module function name in error overlay. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2938](https://github.com/facebookincubator/create-react-app/pull/2938) Remove superfluous lodash usage. ([@Timer](https://github.com/Timer))
 
 #### :nail_care: Enhancement
@@ -338,7 +338,7 @@ yarn add --exact react-scripts@1.0.13
   * [#2948](https://github.com/facebookincubator/create-react-app/pull/2948) Remove Modulus from user guide. ([@Zertz](https://github.com/Zertz))
   * [#2927](https://github.com/facebookincubator/create-react-app/pull/2927) Update README.md. ([@tbassetto](https://github.com/tbassetto))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2942](https://github.com/facebookincubator/create-react-app/pull/2942) Fix docs for `printFileSizesAfterBuild`. ([@Kerumen](https://github.com/Kerumen))
 
@@ -348,7 +348,7 @@ yarn add --exact react-scripts@1.0.13
 
   * [#2991](https://github.com/facebookincubator/create-react-app/pull/2991) Update `babel-runtime` dependency ([@christophehurpeau](https://github.com/christophehurpeau))
 
-* `react-dev-utils`, `react-error-overlay`, `react-scripts`
+* `react-dev-utils-custom`, `react-error-overlay`, `react-scripts`
 
   * [#2515](https://github.com/facebookincubator/create-react-app/pull/2515) Convert `react-error-overlay` to React ([@tharakawj](https://github.com/tharakawj))
 
@@ -389,12 +389,12 @@ yarn add --exact react-scripts@1.0.12
     When a Yarn proxy is set, we will check its connectivity if we cannot reach Yarn's registry. This is often the case when DNS lookups must be made through the proxy.
 
   * [#2853](https://github.com/facebookincubator/create-react-app/pull/2853) Allow use of scoped packages with a pinned version. ([@wileybenet](https://github.com/wileybenet))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2796](https://github.com/facebookincubator/create-react-app/pull/2796) Properly escape HTML tags in error overlay. ([@ccloli](https://github.com/ccloli))
 
     Elements printed in their entirety would sometimes render as HTML. This should no longer happen and should properly render as text.
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#2834](https://github.com/facebookincubator/create-react-app/pull/2834) Make `formatWebpackMessages` return all messages ([@onigoetz](https://github.com/onigoetz))
 * `react-scripts`
   * [#2806](https://github.com/facebookincubator/create-react-app/pull/2806) Fix SockJS version compatibility. ([@christianbundy](https://github.com/christianbundy))
@@ -409,12 +409,12 @@ yarn add --exact react-scripts@1.0.12
   * [#2913](https://github.com/facebookincubator/create-react-app/pull/2913) Allow flags to be passed to node when running `react-scripts`. ([@koistya](https://github.com/koistya))
   * [#2574](https://github.com/facebookincubator/create-react-app/pull/2574) Upgrade to `webpack@3`. ([@themre](https://github.com/themre))
   * [#2747](https://github.com/facebookincubator/create-react-app/pull/2747) Simplify webpack configuration using `Rule.oneOf`. ([@Furizaa](https://github.com/Furizaa))
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#2468](https://github.com/facebookincubator/create-react-app/pull/2468) Allow importing `package.json`. ([@iamdoron](https://github.com/iamdoron))
   * [#2650](https://github.com/facebookincubator/create-react-app/pull/2650) Make UglifyJS error friendlier. ([@viankakrisna](https://github.com/viankakrisna))
 * `create-react-app`
   * [#2785](https://github.com/facebookincubator/create-react-app/pull/2785) Change error wording and list conflicting files when initializing app. ([@OwenFlood](https://github.com/OwenFlood))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2761](https://github.com/facebookincubator/create-react-app/pull/2761) Don't prompt to install serve if already installed. ([@OwenFlood](https://github.com/OwenFlood))
   * [#2754](https://github.com/facebookincubator/create-react-app/pull/2754) Auto-detect JetBrains IDEs. ([@danrr](https://github.com/danrr))
   * [#2740](https://github.com/facebookincubator/create-react-app/pull/2740) Support PyCharm in `launchEditor`. ([@danrr](https://github.com/danrr))
@@ -429,7 +429,7 @@ yarn add --exact react-scripts@1.0.12
   * [#2728](https://github.com/facebookincubator/create-react-app/pull/2728) Add Electrode to alternatives. ([@animesh10](https://github.com/animesh10))
   * [#2788](https://github.com/facebookincubator/create-react-app/pull/2788) Update link for motion. ([@viankakrisna](https://github.com/viankakrisna))
   * [#2697](https://github.com/facebookincubator/create-react-app/pull/2697) Fix env list ordering. ([@alexeyraspopov](https://github.com/alexeyraspopov))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2798](https://github.com/facebookincubator/create-react-app/pull/2798) Update note about `webpackHotDevClient` support. ([@ForbesLindesay](https://github.com/ForbesLindesay))
 * `react-scripts`
   * [#2822](https://github.com/facebookincubator/create-react-app/pull/2822) Add explicit "Opting Out of Caching" header. ([@gaearon](https://github.com/gaearon))
@@ -440,7 +440,7 @@ yarn add --exact react-scripts@1.0.12
   * [#2732](https://github.com/facebookincubator/create-react-app/pull/2732) Update link to issue blocking JSX hoisting. ([@ForbesLindesay](https://github.com/ForbesLindesay))
 
 #### :house: Internal
-* `create-react-app`, `eslint-config-react-app`, `react-dev-utils`, `react-error-overlay`, `react-scripts`
+* `create-react-app`, `eslint-config-react-app`, `react-dev-utils-custom`, `react-error-overlay`, `react-scripts`
   * [#2923](https://github.com/facebookincubator/create-react-app/pull/2923) Update deps. ([@Timer](https://github.com/Timer))
 * `eslint-config-react-app`
   * [#2718](https://github.com/facebookincubator/create-react-app/pull/2718) Re-enable flowtype warning. ([@oskarkook](https://github.com/oskarkook))
@@ -495,7 +495,7 @@ yarn add --exact react-scripts@1.0.11
 
 #### :bug: Bug Fix
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2692](https://github.com/facebookincubator/create-react-app/pull/2692) Fix IE11 crash in development. ([@pdhoopr](https://github.com/pdhoopr))
 
@@ -586,7 +586,7 @@ yarn add --exact react-scripts@1.0.9
   * [#2432](https://github.com/facebookincubator/create-react-app/pull/2432) In new projects, don't register service worker for projects using `PUBLIC_URL` for CDN. ([@jeffposnick](https://github.com/jeffposnick))
   * [#2470](https://github.com/facebookincubator/create-react-app/pull/2470) In new projects, prioritize `index.css` over `App.css`. ([@bryankang](https://github.com/bryankang))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2405](https://github.com/facebookincubator/create-react-app/pull/2405) Fix detection of parent directory in `ModuleScopePlugin`. ([@diligiant](https://github.com/diligiant))
   * [#2562](https://github.com/facebookincubator/create-react-app/pull/2562) Fix eject command output. ([@paweljedrzejczyk](https://github.com/paweljedrzejczyk))
@@ -604,7 +604,7 @@ yarn add --exact react-scripts@1.0.9
   * [#2458](https://github.com/facebookincubator/create-react-app/pull/2458) Add names to module factories in development. ([@Zaccc123](https://github.com/Zaccc123))
   * [#2551](https://github.com/facebookincubator/create-react-app/pull/2551) In new projects, unregister service worker and force reload if `service-worker.js` is not found. ([@ro-savage](https://github.com/ro-savage))
 
-* `babel-preset-react-app`, `react-dev-utils`, `react-scripts`
+* `babel-preset-react-app`, `react-dev-utils-custom`, `react-scripts`
 
   * [#2658](https://github.com/facebookincubator/create-react-app/pull/2658) Bump dependencies. ([@gaearon](https://github.com/gaearon))
 
@@ -613,7 +613,7 @@ yarn add --exact react-scripts@1.0.9
   * [#2657](https://github.com/facebookincubator/create-react-app/pull/2657) Put `react-scripts` in `dependencies`, not `devDependencies`. ([@gaearon](https://github.com/gaearon))
   * [#2635](https://github.com/facebookincubator/create-react-app/pull/2635) Silence unhelpful npm warnings. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2637](https://github.com/facebookincubator/create-react-app/pull/2637) Auto-detect Brackets editor from error overlay. ([@petetnt](https://github.com/petetnt))
   * [#2552](https://github.com/facebookincubator/create-react-app/pull/2552) Auto-detect running editor on Windows for error overlay. ([@levrik](https://github.com/levrik))
@@ -675,7 +675,7 @@ yarn add --exact react-scripts@1.0.9
   * [#2408](https://github.com/facebookincubator/create-react-app/pull/2408) E2E testing enhancements. ([@EnoahNetzach](https://github.com/EnoahNetzach))
   * [#2430](https://github.com/facebookincubator/create-react-app/pull/2430) Remove an unnecessary webpack option. ([@andykenward](https://github.com/andykenward))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2483](https://github.com/facebookincubator/create-react-app/pull/2483) Remove a scoped package dependency. ([@Timer](https://github.com/Timer))
 
@@ -766,7 +766,7 @@ If you haven't changed the default CSS organization, you may want to apply [this
   * [#2349](https://github.com/facebookincubator/create-react-app/pull/2349) Update webpack to v2.6.0. ([@ingro](https://github.com/ingro))
   * [#2351](https://github.com/facebookincubator/create-react-app/pull/2351) Removed the overriding of `reduce_vars` since webpack v2.6.0 included fix of Uglify. ([@Zaccc123](https://github.com/Zaccc123))
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#2361](https://github.com/facebookincubator/create-react-app/pull/2361) Print file sizes with correct build folder path. ([@fezhengjin](https://github.com/fezhengjin))
 
@@ -807,7 +807,7 @@ yarn add --dev --exact react-scripts@1.0.7
 
   * [#2346](https://github.com/facebookincubator/create-react-app/pull/2346) Resolve Flow errors in an ESLint plugin. ([@iainbeeston](https://github.com/iainbeeston))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2332](https://github.com/facebookincubator/create-react-app/pull/2332) Fix proxying issues with backends that don't support IPv6. ([@Timer](https://github.com/Timer))
 
@@ -845,12 +845,12 @@ yarn add --dev --exact react-scripts@1.0.6
 ## 1.0.5 (May 22, 2017)
 
 #### :bug: Bug Fix
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#2326](https://github.com/facebookincubator/create-react-app/pull/2326) Files in `public/` folder should not be requested through proxy. ([@gaearon](https://github.com/gaearon))
 
 #### :nail_care: Enhancement
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2327](https://github.com/facebookincubator/create-react-app/pull/2327) Limit console warnings to 5 files at most. ([@gaearon](https://github.com/gaearon))
 
@@ -859,7 +859,7 @@ yarn add --dev --exact react-scripts@1.0.6
   * [#2325](https://github.com/facebookincubator/create-react-app/pull/2325) Allow declaring variables before use in a scope above. ([@gaearon](https://github.com/gaearon))
 
 #### :house: Internal
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#2320](https://github.com/facebookincubator/create-react-app/pull/2320) Remove unnecessary dependencies. ([@pmadar](https://github.com/pmadar))
 
@@ -906,13 +906,13 @@ yarn add --dev --exact react-scripts@1.0.4
 
 #### :bug: Bug Fix
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2297](https://github.com/facebookincubator/create-react-app/pull/2297) Don’t serve the development version from public IPs by default. ([@Timer](https://github.com/Timer))
 
 * `eslint-config-react-app`
   * [#2311](https://github.com/facebookincubator/create-react-app/pull/2311) Disable `flowtype/require-valid-file-annotation` lint rule due to false positives. ([@Robdel12](https://github.com/Robdel12))
 
-* `react-dev-utils`, `react-error-overlay`
+* `react-dev-utils-custom`, `react-error-overlay`
   * [#2301](https://github.com/facebookincubator/create-react-app/pull/2301) Wrap more `console` calls into a check. ([@BrodaNoel](https://github.com/BrodaNoel))
 
 * `react-scripts`
@@ -942,15 +942,15 @@ yarn add --dev --exact react-scripts@1.0.3
 
 #### :bug: Bug Fix
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#2276](https://github.com/facebookincubator/create-react-app/pull/2276) Serve a no-op service worker in development to ensure it doesn't cache the production build even if it was served on the same port. ([@jeffposnick](https://github.com/jeffposnick))
 
-* `react-dev-utils`, `react-error-overlay`
+* `react-dev-utils-custom`, `react-error-overlay`
 
   * [#2290](https://github.com/facebookincubator/create-react-app/pull/2290) Wrap console calls into a check for IE9. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
 
   * [#2282](https://github.com/facebookincubator/create-react-app/pull/2282) Add Windows Subsystem for Linux support to the error overlay. ([@noinkling](https://github.com/noinkling))
   * [#2269](https://github.com/facebookincubator/create-react-app/pull/2269) Fix a missing package dependency. ([@GreenGremlin](https://github.com/GreenGremlin))
@@ -964,7 +964,7 @@ yarn add --dev --exact react-scripts@1.0.3
 
 #### :house: Internal
 
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
 
   * [#2283](https://github.com/facebookincubator/create-react-app/pull/2283) Remove unnecessary dependencies(#751). ([@pmadar](https://github.com/pmadar))
 
@@ -1004,10 +1004,10 @@ If you previously had issues with an `Invalid Host Header` error, [follow these 
   * [#2250](https://github.com/facebookincubator/create-react-app/pull/2250) Ignore `.env.local` in `test` environment. ([@gaearon](https://github.com/gaearon))
   * [#2246](https://github.com/facebookincubator/create-react-app/pull/2246) Gracefully shut down the development server on signals. ([@gaearon](https://github.com/gaearon))
 
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2229](https://github.com/facebookincubator/create-react-app/pull/2229) Show customized build path for serve instruction. ([@chyipin](https://github.com/chyipin))
 
-* `react-dev-utils`, `react-error-overlay`
+* `react-dev-utils-custom`, `react-error-overlay`
   * [#2243](https://github.com/facebookincubator/create-react-app/pull/2243) Add missing package dependency. ([@Timer](https://github.com/Timer))
 
 * `react-error-overlay`
@@ -1236,7 +1236,7 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
 **For a readable summary of the changes, [check out our blog post](https://facebook.github.io/react/blog/2017/05/18/whats-new-in-create-react-app.html).**
 
 #### :boom: Breaking Change
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#2189](https://github.com/facebookincubator/create-react-app/pull/2189) Add `ModuleScopePlugin` to ensure files reside in `src/`. ([@Timer](https://github.com/Timer))
 * `react-scripts`
   * [#2187](https://github.com/facebookincubator/create-react-app/pull/2187) Ignore Moment.js locales by default. ([@gaearon](https://github.com/gaearon))
@@ -1244,7 +1244,7 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1771](https://github.com/facebookincubator/create-react-app/pull/1771) Some flexbox bugs are autofixed, and support for 2009 spec is dropped. ([@cr101](https://github.com/cr101))
   * [#1614](https://github.com/facebookincubator/create-react-app/pull/1614) Upgrade to Jest ~~19~~ (now 20). ([@rogeliog](https://github.com/rogeliog))
   * [#1305](https://github.com/facebookincubator/create-react-app/pull/1305) Whitelist files that can be embedded through url-loader. ([@pugnascotia](https://github.com/pugnascotia))
-* `eslint-config-react-app`, `react-dev-utils`
+* `eslint-config-react-app`, `react-dev-utils-custom`
   * [#2186](https://github.com/facebookincubator/create-react-app/pull/2186) Tweak lint rules. ([@gaearon](https://github.com/gaearon))
 * `eslint-config-react-app`, `react-error-overlay`, `react-scripts`
   * [#2163](https://github.com/facebookincubator/create-react-app/pull/2163) Upgrade `eslint-plugin-jsx-a11y` and activate more rules. ([@AlmeroSteyn](https://github.com/AlmeroSteyn))
@@ -1258,7 +1258,7 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1344](https://github.com/facebookincubator/create-react-app/pull/1344) Support multiple env configuration files. ([@tuchk4](https://github.com/tuchk4))
   * [#2168](https://github.com/facebookincubator/create-react-app/pull/2168) Enable CSS sourcemaps in production. ([@gaearon](https://github.com/gaearon))
   * [#1830](https://github.com/facebookincubator/create-react-app/pull/1830) Make subset of Jest options overridable. ([@ryansully](https://github.com/ryansully))
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#1101](https://github.com/facebookincubator/create-react-app/pull/1101) Add `react-error-overlay`, our new crash overlay. ([@Timer](https://github.com/Timer))
   * [#1590](https://github.com/facebookincubator/create-react-app/pull/1590) Support specifying a node script as BROWSER environment variable. ([@GAumala](https://github.com/GAumala))
   * [#1790](https://github.com/facebookincubator/create-react-app/pull/1790) Support multiple proxies in development. ([@jamesblight](https://github.com/jamesblight))
@@ -1283,7 +1283,7 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1819](https://github.com/facebookincubator/create-react-app/pull/1819) Makes end-to-end testing crash on unhandled rejections. ([@dbismut](https://github.com/dbismut))
   * [#1810](https://github.com/facebookincubator/create-react-app/pull/1810) Fixes a silent crash when ejecting. ([@gaearon](https://github.com/gaearon))
   * [#1727](https://github.com/facebookincubator/create-react-app/pull/1727) Fix ejecting from a scoped fork. ([@gaearon](https://github.com/gaearon))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2076](https://github.com/facebookincubator/create-react-app/pull/2076) `openBrowser` now supports urls with more than one parameter. ([@alisonmonteiro](https://github.com/alisonmonteiro))
   * [#1690](https://github.com/facebookincubator/create-react-app/pull/1690) Fix `openBrowser()` when `BROWSER=open` on macOS. ([@bpierre](https://github.com/bpierre))
   * [#1696](https://github.com/facebookincubator/create-react-app/pull/1696) Fix an edge-case for people with the username `cwd`. ([@chrisdrackett](https://github.com/chrisdrackett))
@@ -1297,12 +1297,12 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1669](https://github.com/facebookincubator/create-react-app/pull/1669) Fix react dependency versions during initial install. ([@johann-sonntagbauer](https://github.com/johann-sonntagbauer))
 
 #### :nail_care: Enhancement
-* `react-dev-utils`, `react-scripts`
+* `react-dev-utils-custom`, `react-scripts`
   * [#2202](https://github.com/facebookincubator/create-react-app/pull/2202) Refactor and improve build output. ([@gaearon](https://github.com/gaearon))
   * [#2152](https://github.com/facebookincubator/create-react-app/pull/2152) Tweak error and warning output. ([@gaearon](https://github.com/gaearon))
   * [#1772](https://github.com/facebookincubator/create-react-app/pull/1772) Replace prompt function Inquirer.js. (#1767). ([@iansu](https://github.com/iansu))
-  * [#1726](https://github.com/facebookincubator/create-react-app/pull/1726) Extract generic build functions to react-dev-utils. ([@viankakrisna](https://github.com/viankakrisna))
-* `react-dev-utils`, `react-error-overlay`
+  * [#1726](https://github.com/facebookincubator/create-react-app/pull/1726) Extract generic build functions to react-dev-utils-custom. ([@viankakrisna](https://github.com/viankakrisna))
+* `react-dev-utils-custom`, `react-error-overlay`
   * [#2201](https://github.com/facebookincubator/create-react-app/pull/2201) Tweak error overlay styles. ([@bvaughn](https://github.com/bvaughn))
 * `react-scripts`
   * [#2187](https://github.com/facebookincubator/create-react-app/pull/2187) Ignore Moment.js locales by default. ([@gaearon](https://github.com/gaearon))
@@ -1314,11 +1314,11 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1747](https://github.com/facebookincubator/create-react-app/pull/1747) Display `yarn` instead of `yarnpkg` when creating a new application. ([@lpalmes](https://github.com/lpalmes))
   * [#1433](https://github.com/facebookincubator/create-react-app/pull/1433) Modularise scripts. ([@djgrant](https://github.com/djgrant))
   * [#1677](https://github.com/facebookincubator/create-react-app/pull/1677) Add `X-FORWARDED` headers for proxy requests. ([@johann-sonntagbauer](https://github.com/johann-sonntagbauer))
-* `eslint-config-react-app`, `react-dev-utils`
+* `eslint-config-react-app`, `react-dev-utils-custom`
   * [#2186](https://github.com/facebookincubator/create-react-app/pull/2186) Tweak lint rules. ([@gaearon](https://github.com/gaearon))
 * `react-error-overlay`, `react-scripts`
   * [#2171](https://github.com/facebookincubator/create-react-app/pull/2171) Use Jest 20. ([@gaearon](https://github.com/gaearon))
-* `babel-preset-react-app`, `eslint-config-react-app`, `react-dev-utils`, `react-error-overlay`, `react-scripts`
+* `babel-preset-react-app`, `eslint-config-react-app`, `react-dev-utils-custom`, `react-error-overlay`, `react-scripts`
   * [#2170](https://github.com/facebookincubator/create-react-app/pull/2170) Bump dependencies. ([@gaearon](https://github.com/gaearon))
 * `eslint-config-react-app`
   * [#2064](https://github.com/facebookincubator/create-react-app/pull/2064) Removing a stylistic lint rule. ([@anilreddykatta](https://github.com/anilreddykatta))
@@ -1329,7 +1329,7 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#2130](https://github.com/facebookincubator/create-react-app/pull/2130) Blacklist confusing global variables. ([@doshisid](https://github.com/doshisid))
   * [#1542](https://github.com/facebookincubator/create-react-app/pull/1542) Bump jsx-a11y version. ([@bondz](https://github.com/bondz))
   * [#1705](https://github.com/facebookincubator/create-react-app/pull/1705) Add support for `ignoreRestSiblings` in `no-unused-vars`. ([@chrisdrackett](https://github.com/chrisdrackett))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#2125](https://github.com/facebookincubator/create-react-app/pull/2125) Only show the first compilation error. ([@gaearon](https://github.com/gaearon))
   * [#2120](https://github.com/facebookincubator/create-react-app/pull/2120) Omit ESLint warnings when there are ESLint errors. ([@gaearon](https://github.com/gaearon))
   * [#2113](https://github.com/facebookincubator/create-react-app/pull/2113) Prettify errors and warnings for Webpack 2. ([@gaearon](https://github.com/gaearon))
@@ -1378,14 +1378,14 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1730](https://github.com/facebookincubator/create-react-app/pull/1730) Fix Node 4 e2e tests. ([@Timer](https://github.com/Timer))
   * [#1715](https://github.com/facebookincubator/create-react-app/pull/1715) Remove unused `url` import in Webpack config. ([@pd4d10](https://github.com/pd4d10))
   * [#1700](https://github.com/facebookincubator/create-react-app/pull/1700) Update extract-text-webpack-plugin to stable. ([@SimenB](https://github.com/SimenB))
-* `react-dev-utils`, `react-scripts`
-  * [#2209](https://github.com/facebookincubator/create-react-app/pull/2209) Move more logic from react-scripts to react-dev-utils. ([@gaearon](https://github.com/gaearon))
+* `react-dev-utils-custom`, `react-scripts`
+  * [#2209](https://github.com/facebookincubator/create-react-app/pull/2209) Move more logic from react-scripts to react-dev-utils-custom. ([@gaearon](https://github.com/gaearon))
   * [#2138](https://github.com/facebookincubator/create-react-app/pull/2138) Add custom eslint formatter. ([@doshisid](https://github.com/doshisid))
 * `babel-preset-react-app`, `react-scripts`
   * [#2175](https://github.com/facebookincubator/create-react-app/pull/2175) Resolve regenerator runtime relative to react-scripts. ([@gaearon](https://github.com/gaearon))
   * [#1894](https://github.com/facebookincubator/create-react-app/pull/1894) Re-disable babel modules transform. ([@Timer](https://github.com/Timer))
   * [#1742](https://github.com/facebookincubator/create-react-app/pull/1742) Switch to preset-env. ([@Timer](https://github.com/Timer))
-* `create-react-app`, `react-dev-utils`, `react-scripts`
+* `create-react-app`, `react-dev-utils-custom`, `react-scripts`
   * [#1897](https://github.com/facebookincubator/create-react-app/pull/1897) Bump minimal Node version to 6. ([@ianschmitz](https://github.com/ianschmitz))
 * Other
   * [#1868](https://github.com/facebookincubator/create-react-app/pull/1868) Fix AppVeyor CI. ([@darrenscerri](https://github.com/darrenscerri))
@@ -1395,13 +1395,13 @@ Please [file an issue](https://github.com/facebookincubator/create-react-app/iss
   * [#1707](https://github.com/facebookincubator/create-react-app/pull/1707) Add double quotes to escape spaces in paths in e2e. ([@viankakrisna](https://github.com/viankakrisna))
   * [#1688](https://github.com/facebookincubator/create-react-app/pull/1688) Pin and upgrade lerna version. ([@viankakrisna](https://github.com/viankakrisna))
   * [#1648](https://github.com/facebookincubator/create-react-app/pull/1648) Add `appveyor.yml`. ([@Timer](https://github.com/Timer))
-* `babel-preset-react-app`, `create-react-app`, `eslint-config-react-app`, `react-dev-utils`, `react-scripts`
+* `babel-preset-react-app`, `create-react-app`, `eslint-config-react-app`, `react-dev-utils-custom`, `react-scripts`
   * [#1738](https://github.com/facebookincubator/create-react-app/pull/1738) Update to modern code style (ES6). ([@tuchk4](https://github.com/tuchk4))
 * `eslint-config-react-app`
   * [#1740](https://github.com/facebookincubator/create-react-app/pull/1740) Relax ESLint config peerDependency. ([@gaearon](https://github.com/gaearon))
-* `eslint-config-react-app`, `react-dev-utils`, `react-scripts`
+* `eslint-config-react-app`, `react-dev-utils-custom`, `react-scripts`
   * [#1729](https://github.com/facebookincubator/create-react-app/pull/1729) Lint internal scripts with eslint:recommended. ([@gaearon](https://github.com/gaearon))
-* `react-dev-utils`
+* `react-dev-utils-custom`
   * [#1724](https://github.com/facebookincubator/create-react-app/pull/1724) Don't use ES6 in a file that should run on Node 4. ([@gaearon](https://github.com/gaearon))
 
 #### Committers: 66
