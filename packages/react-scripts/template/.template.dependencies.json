@@ -1,10 +1,14 @@
 {
   "dependencies": {
     "address": "^1.0.3",
-    "antd": "^2.13.10",
+    "antd": "^3.1.15",
     "express": "^4.16.2",
-    "flow-bin": "^0.59.0",
+    "flow-bin": "^0.64.0",
     "morgan": "^1.9.0",
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "stylelint": "^8.4.0",
+    "stylelint-scss": "^2.2.0"
   }
 }
