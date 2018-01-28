@@ -1,10 +1,16 @@
 # ☢ custom-react-scripts ☢
 Latest version of original react-scripts: **1.0.11**
 
-### ⚠️ Disclaimer:
-> This is **not** a fork of ```create-react-app```. It's just a fork of ```react-scripts``` with simple babel/webpack modifications that can toggle extra features.
+## Установка
 
-The reason for this fork's existence is explained better in [this Medium article](https://medium.com/@kitze/configure-create-react-app-without-ejecting-d8450e96196a).
+```bash
+cd packages/react-dev-utils/
+npm publish
+cd ../react-error-overlay/
+npm publish
+cd ../react-scripts/
+npm publish
+```
 
 ### 💡Features:
 * Decorators
