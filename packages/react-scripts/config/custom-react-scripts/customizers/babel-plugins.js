@@ -6,6 +6,7 @@ module.exports = {
     get: () =>
       [require.resolve('babel-plugin-import')].concat({
         libraryName: 'antd',
+        libraryDirectory: 'es',
         style: true,
       }),
   },

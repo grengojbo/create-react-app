@@ -1,6 +1,6 @@
 {
   "name": "es6-react-scripts",
-  "version": "1.1.0-1",
+  "version": "1.1.0-2",
   "description": "Configuration and scripts for create-react-app",
   "repository": "grengojbo/es6-react-scripts",
   "license": "MIT",
@@ -41,7 +41,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "express": "^4.16.2",
-    "eslint": "^4.16.0",
+    "eslint": "^4.17.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-flowtype": "^2.42.0",
