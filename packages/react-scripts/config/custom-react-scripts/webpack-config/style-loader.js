@@ -2,6 +2,10 @@ const postCssOptions = require('../options/postcss-options');
 const extractTextPluginOptions = require('../options/extract-text-plugin-options');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
+const localIdentName =
+  process.env.REACT_APP_CSS_MODULE_CLASSNAME_TEMPLATE ||
+  '[sha512:hash:base32]-[name]-[local]';
+
 const paths = require('../../paths');
 const lessOverrides = require(`${paths.appPath}/less-overrides.json`);
 
@@ -22,7 +26,7 @@ module.exports = (loader, test, exclude, modules) => isDev => {
         { importLoaders: 1 },
         modules === true
           ? {
-              localIdentName: '[local]__[hash:base64:5]',
+              localIdentName: localIdentName,
               modules: true,
             }
           : {}

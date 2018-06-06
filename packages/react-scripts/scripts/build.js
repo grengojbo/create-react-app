@@ -100,6 +100,8 @@ measureFileSizesBeforeBuild(paths.appBuild)
         buildFolder,
         useYarn
       );
+
+      process.exit();
     },
     err => {
       console.log(chalk.red('Failed to compile.\n'));

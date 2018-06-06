@@ -35,6 +35,7 @@ The generated project comes with every option turned on by default, but you can 
 - ```REACT_APP_SASS_MODULES``` - enable Sass modules
 - ```REACT_APP_LESS_MODULES``` - enable Less modules
 - ```REACT_APP_STYLUS_MODULES``` - enable Stylus modules
+- ```REACT_APP_CSS_MODULE_CLASSNAME_TEMPLATE='module-[sha512:hash:base32]-[name]-[local]'``` - add custom CSS Module hash ident name
 
 Note: to use modules the file must be named in the following format: ```$name.module.$preprocessorName```.
 
