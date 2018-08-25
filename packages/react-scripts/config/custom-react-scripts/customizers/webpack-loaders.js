@@ -9,7 +9,13 @@ module.exports = {
     get: styleLoader(undefined, /\.css$/, /\.module\.css$/),
   },
   SASS: {
-    get: styleLoader(sassLoader, /\.s[ac]ss$/, /\.module\.s[ac]ss$/),
+    get: styleLoader(
+      sassLoader,
+      /\.s[ac]ss$/,
+      /\.module\.s[ac]ss$/,
+      false,
+      { includePaths: ['./node_modules', './src'] }
+    ),
   },
   LESS: {
     get: styleLoader(lessLoader, /\.less$/, /\.module\.less$/),
@@ -24,7 +30,12 @@ module.exports = {
     get: styleLoader(lessLoader, /\.module\.less$/, undefined, true),
   },
   SASS_MODULES: {
-    get: styleLoader(sassLoader, /\.module\.s[ac]ss$/, undefined, true),
+    get: styleLoader(
+      sassLoader,
+      /\.module\.s[ac]ss$/,
+      undefined,
+      true,
+      { includePaths: ['./node_modules', './src'], }),
   },
   CSS_MODULES: {
     get: styleLoader(undefined, /\.module\.css$/, undefined, true),

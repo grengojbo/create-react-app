@@ -9,7 +9,7 @@ const localIdentName =
 const paths = require('../../paths');
 const lessOverrides = require(`${paths.appPath}/less-overrides.json`);
 
-module.exports = (loader, test, exclude, modules) => isDev => {
+module.exports = (loader, test, exclude, modules, options) => isDev => {
   let loaders = isDev
     ? [
         {
@@ -45,10 +45,14 @@ module.exports = (loader, test, exclude, modules) => isDev => {
   if (loader) {
     loaders.push({
       loader,
-      options: {
-        sourceMap: shouldUseSourceMap,
-        modifyVars: lessOverrides,
-      },
+      options: Object.assign(
+        {},
+        {
+          sourceMap: shouldUseSourceMap,
+          modifyVars: lessOverrides,
+        },
+        options
+      ),
     });
   }
 

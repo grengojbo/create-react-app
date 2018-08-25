@@ -115,9 +115,10 @@ class App extends Component {
             <li>
               <code>REACT_APP_WEBPACK_DASHBOARD=true</code>
               <span>
-                - Enables connection to{' '}
+                - Enables connection to {' '}
                 <a
-                  ref="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   href="https://github.com/FormidableLabs/electron-webpack-dashboard"
                 >
                   webpack-dashboard
