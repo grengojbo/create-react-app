@@ -36,8 +36,10 @@ const env = getClientEnvironment(publicUrl);
 const customConfig = getCustomConfig(true);
 
 // style files regexes
-const cssRegex = /\.css$/;
-const cssModuleRegex = /\.module\.css$/;
+const cssRegex = /\.(css|pcss)$/;
+const cssModuleRegex = /\.module\.(css|pcss)$/;
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
@@ -230,7 +232,7 @@ module.exports = {
               {
                 loader: require.resolve('thread-loader'),
                 options: {
-                  poolTimeout: Infinity // keep workers alive for more effective watch mode
+                  poolTimeout: Infinity, // keep workers alive for more effective watch mode
                 },
               },
               {
@@ -239,7 +241,9 @@ module.exports = {
                   // @remove-on-eject-begin
                   babelrc: false,
                   // @remove-on-eject-end
-                  presets: [require.resolve('babel-preset-react-app')],
+                  presets: [require.resolve('babel-preset-react-app')].concat(
+                    customConfig.babelPresets
+                  ),
                   plugins: [
                     [
                       require.resolve('babel-plugin-named-asset-import'),
@@ -251,8 +255,7 @@ module.exports = {
                         },
                       },
                     ],
-                    ...customConfig.babelPlugins,
-                  ],
+                  ].concat(customConfig.babelPlugin),
                   // This is a feature of `babel-loader` for webpack (not Babel itself).
                   // It enables caching results in ./node_modules/.cache/babel-loader/
                   // directory for faster rebuilds.
@@ -272,7 +275,7 @@ module.exports = {
               {
                 loader: require.resolve('thread-loader'),
                 options: {
-                  poolTimeout: Infinity // keep workers alive for more effective watch mode
+                  poolTimeout: Infinity, // keep workers alive for more effective watch mode
                 },
               },
               {
@@ -333,6 +336,28 @@ module.exports = {
                 getLocalIdent: getCSSModuleLocalIdent,
               },
               'sass-loader'
+            ),
+          },
+          // My add less-loader
+          {
+            test: lessRegex,
+            exclude: lessModuleRegex,
+            loader: getStyleLoaders(
+              {
+                importLoaders: 3,
+              },
+              'less-loader'
+            ),
+          },
+          {
+            test: lessModuleRegex,
+            loader: getStyleLoaders(
+              {
+                importLoaders: 3,
+                modules: true,
+                getLocalIdent: getCSSModuleLocalIdent,
+              },
+              'less-loader'
             ),
           },
           // The GraphQL loader preprocesses GraphQL queries in .graphql files.

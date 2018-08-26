@@ -48,12 +48,12 @@ if (env.stringified['process.env'].NODE_ENV !== '"production"') {
 // style files regexes
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
-const cssFilename = `${
-  process.env.REACT_APP_STATIC
-  }/css/[name].[contenthash:8].css`;
+// const cssFilename = `${process.env.REACT_APP_STATIC}/css/[name].[contenthash:8].css`;
 
 // common function to get style loaders
 const getStyleLoaders = (cssOptions, preProcessor) => {
@@ -376,12 +376,36 @@ module.exports = {
               'sass-loader'
             ),
           },
+          // My add less-loader
+          {
+            test: lessRegex,
+            exclude: lessModuleRegex,
+            loader: getStyleLoaders(
+              {
+                importLoaders: 3,
+                sourceMap: shouldUseSourceMap,
+              },
+              'less-loader'
+            ),
+          },
+          {
+            test: lessModuleRegex,
+            loader: getStyleLoaders(
+              {
+                importLoaders: 3,
+                sourceMap: shouldUseSourceMap,
+                modules: true,
+                getLocalIdent: getCSSModuleLocalIdent,
+              },
+              'less-loader'
+            ),
+          },
           // The GraphQL loader preprocesses GraphQL queries in .graphql files.
           {
             test: /\.(graphql)$/,
             loader: 'graphql-tag/loader',
           },
-          ...customConfig.webpackLoaders,
+          // ...customConfig.webpackLoaders,
           // "file" loader makes sure assets end up in the `build` folder.
           // When you `import` an asset, you get its filename.
           // This loader doesn't use a "test" so it will catch all modules

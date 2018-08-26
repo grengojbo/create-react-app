@@ -29,7 +29,17 @@ npm publish
 ```bash
 npm install -g create-react-app
 create-react-app my-app --scripts-version es6-react-scripts
+
+npm install -g create-react-app@next
+create-react-app my-app --scripts-version es6-react-scripts
 ```
+
+### Обновление
+
+```bash
+yarn upgrade es6-react-scripts
+```
+
 
 Modify the ```.env``` file in the root of the generated project, and add any of the configuration options below 👇 to enable that feature.
 
