@@ -857,7 +857,7 @@ module.exports = warning;
 /* unknown exports provided */
 /* all exports used */
 /*!*****************************************************************!*\
-  !*** ./packages/react-dev-utils-custom/~/inherits/inherits_browser.js ***!
+  !*** ./packages/react-dev-utils/~/inherits/inherits_browser.js ***!
   \*****************************************************************/
 /***/ (function(module, exports) {
 
