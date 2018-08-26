@@ -1,5 +1,5 @@
 {
-  "name": "react-dev-utils-custom",
+  "name": "react-dev-utils",
   "version": "5.0.2",
   "description": "Webpack utilities used by Create React App",
   "repository": "grengojbo/es6-react-scripts",
@@ -38,7 +38,7 @@
     "workspaceUtils.js"
   ],
   "dependencies": {
-    "@babel/code-frame": "7.0.0-beta.46",
+    "@babel/code-frame": "7.0.0-rc.3",
     "address": "1.0.3",
     "browserslist": "3.2.6",
     "chalk": "2.4.1",

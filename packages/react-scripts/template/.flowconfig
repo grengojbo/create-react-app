@@ -1,14 +1,22 @@
 [ignore]
-<PROJECT_ROOT>/node_modules/fbjs/.*
+;.*/node_modules/fbjs/.*
+.*/node_modules/.*
+.*/.git/.*
+;.*/__test__/.*
+;.*/fixtures/.*
 
 [include]
+<PROJECT_ROOT>/src/**/*.js
 
 [libs]
+;flow/
 ./interfaces/global.js
 
 [options]
 ;emoji=true
-module.system=haste
+module.file_ext=.js
+sharedmemory.hash_table_pow=19
+;module.system=haste
 ;strip_root=true
 ;munge_underscores=true
 ;module.name_mapper='.*\(.s?css\)' -> 'CSSModule'
